@@ -15,6 +15,16 @@ Hint: For subsets([1, 2, 3]), there are two kinds of subsets:
 ***********************************************************************/
 
 // your code here
+function subsets(arr) {
+  if (arr.length === 0) {
+    return [];
+  } else if(arr.length ===1 ){
+    return [[],[arr]];
+  }else {
+    return subsets[arr.slice(-1)];
+  }
+
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
